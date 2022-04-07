@@ -10,7 +10,9 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo w="100px" />
+      <MenuItem to="/">
+        <Logo w="50px" />
+      </MenuItem>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -63,13 +65,7 @@ const MenuLinks = ({ isOpen }) => {
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
     >
-      <Stack
-        spacing={8}
-        align="center"
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "row", "row", "row"]}
-        pt={[4, 4, 0, 0]}
-      >
+      <Stack spacing={10} align="center" direction="row">
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/match">Match</MenuItem>
       </Stack>
@@ -86,7 +82,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       mb={8}
-      p={5}
+      p={3}
       bg="#5B9EA6"
       color="white"
       {...props}

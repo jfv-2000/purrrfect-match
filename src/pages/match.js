@@ -1,7 +1,12 @@
 import React from "react";
+import PetCard from "../components/PetCard/PetCard";
 
 const Match = () => {
-  return <h1>Match</h1>;
+  return (
+    <div className="match">
+      <PetCard />
+    </div>
+  );
 };
 
 export default Match;
