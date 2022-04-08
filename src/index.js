@@ -9,11 +9,11 @@ import customTheme from "./utils/theme";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ChakraProvider theme={customTheme}>
+    <ChakraProvider theme={customTheme}>
+      <BrowserRouter>
         <App />
-      </ChakraProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ChakraProvider>
   </React.StrictMode>,
   rootElement
 );
