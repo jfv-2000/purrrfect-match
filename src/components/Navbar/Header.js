@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Box, Flex, Text, Stack } from "@chakra-ui/react";
+import { Link, Box, Flex, Stack } from "@chakra-ui/react";
 
 import Logo from "./Logo";
 
@@ -51,10 +51,8 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
-    <Link href={to}>
-      <Text display="block" {...rest}>
-        {children}
-      </Text>
+    <Link href={to} display="block">
+      {children}
     </Link>
   );
 };

@@ -4,9 +4,11 @@ import NavLinkStructure from "./components/Navbar/Navlink-structure";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <NavLinkStructure />
+      <div className="content">
+        <NavLinkStructure />
+      </div>
     </div>
   );
 }

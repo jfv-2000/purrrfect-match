@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../utils/Depressed-dog-logo.png";
+import Image from "../../utils/Logo/Depressed-dog-logo.png";
 import { Box } from "@chakra-ui/react";
 
 export default function Logo(props) {
