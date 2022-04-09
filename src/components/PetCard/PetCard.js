@@ -20,10 +20,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DogExample from "../../utils/PetDb/Pet-database";
 
+import TinderCard from "react-tinder-card";
+
+
+
 export default function PetCard(Pet) {
   var settings = {
     dots: true,
   };
+
+  const swiped = (direction, nameToDelete) => {
+    console.log("swiped on:" + nameToDelete);
+  }
+  
+  
+  const outOfWindow = (name) => {
+    console.log(name + "is gone");
+  }
+
   return (
     <Flex>
       <Box
