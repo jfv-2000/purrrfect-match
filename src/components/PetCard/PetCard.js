@@ -22,6 +22,7 @@ import DogExample from "../../utils/PetDb/Pet-database";
 import '../../styles/PetCard.css'
 
 import TinderCard from "react-tinder-card";
+import CardFooter from "./CardFooter"
 
 
 export default function PetCard(Pet) {
@@ -56,7 +57,7 @@ export default function PetCard(Pet) {
       Type: "small Husky-x Dog",
       Distance: "26",
       About:
-        " I am an energetic Husky that loves cuddles and snow. I'm fat and obese as shit so please put me on a diet !",
+        " I'm smol.",
       Traits: ["Loyal", "Energetic", "Aggressive"],
       PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
       NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
@@ -65,8 +66,28 @@ export default function PetCard(Pet) {
         { Type: "Fatness", Level: 99 },
       ],
       Pictures: [
-        "https://img.dog-learn.com/dog-breeds/siberian-husky/siberian-husky-sz6.jpg",
+        "https://c8.alamy.com/zooms/9/5fedd3af28ec4185b5734f5a076f1d60/kngfjp.jpg",
         "https://www.metrovetchicago.com/sites/default/files/styles/large/public/siberian-husky-dog-breed-info.jpg?itok=m9gSUDq7",
+      ],
+    },
+    {
+      Name: "Jamie",
+      Gender: "Female",
+      Age: "6",
+      Type: "small Husky-x Dog",
+      Distance: "26",
+      About:
+        " I'm smol.",
+      Traits: ["Loyal", "Energetic", "Aggressive"],
+      PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
+      NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
+      Upkeep: [
+        { Type: "Energy Level", Level: 59 },
+        { Type: "Fatness", Level: 99 },
+      ],
+      Pictures: [
+        "https://www.metrovetchicago.com/sites/default/files/styles/large/public/siberian-husky-dog-breed-info.jpg?itok=m9gSUDq7",
+        "https://c8.alamy.com/zooms/9/5fedd3af28ec4185b5734f5a076f1d60/kngfjp.jpg",
       ],
     },
   
@@ -83,8 +104,10 @@ export default function PetCard(Pet) {
 
 
   return (
+
     <Flex>
-      <div className='tinderCards_CardContainer'>
+      
+      <div className='CardsContainer'>
       {animals.map( (pet) => (
         <TinderCard 
           className="swipe"
@@ -93,6 +116,7 @@ export default function PetCard(Pet) {
           onSwipe={(direction) => swiped(direction, pet.Name)}
           onCardLeftScreen={() => outOfWindow(pet.Name)}
         > 
+        <div>
       <Box
         bg="#A9D4D9"
         w="1000px"
@@ -211,7 +235,10 @@ export default function PetCard(Pet) {
             })}
           </Container>
         </SimpleGrid>
+        
       </Box>
+      </div>
+      <CardFooter />
       </TinderCard>
         )) }
       </div>

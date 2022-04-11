@@ -1,6 +1,7 @@
-.tinderCards_CardContainer{
-    
+.CardsContainer{
+    display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10vh;
     background-color:linear-gradient (aquamarine, rgb(223, 184, 140));
   }
