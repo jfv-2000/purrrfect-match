@@ -1,8 +1,14 @@
 .CardsContainer{
-    display: flex;
+    display: relative;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
     background-color:linear-gradient (aquamarine, rgb(223, 184, 140));
   }
+  .swipe {
+    position: absolute;
+  }
   
+  .card {
+    position: relative;
+  }

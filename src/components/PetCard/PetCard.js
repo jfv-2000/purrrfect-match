@@ -71,13 +71,13 @@ export default function PetCard(Pet) {
       ],
     },
     {
-      Name: "Jamie",
+      Name: "Jess",
       Gender: "Female",
-      Age: "6",
+      Age: "7",
       Type: "small Husky-x Dog",
       Distance: "26",
       About:
-        " I'm smol.",
+        " I'm not smol.",
       Traits: ["Loyal", "Energetic", "Aggressive"],
       PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
       NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
