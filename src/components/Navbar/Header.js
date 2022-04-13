@@ -66,6 +66,7 @@ const MenuLinks = ({ isOpen }) => {
       <Stack spacing={10} align="center" direction="row">
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/match">Match</MenuItem>
+        <MenuItem to="/grid">Grid</MenuItem>
       </Stack>
     </Box>
   );
