@@ -18,7 +18,7 @@ import { BsGenderFemale, BsGenderMale } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import DogExample from "../../utils/PetDb/Pet-database";
+import Animals from "../../utils/PetDb/Pet-database";
 import '../../styles/PetCard.css'
 
 import TinderCard from "react-tinder-card";
@@ -108,7 +108,7 @@ export default function PetCard(Pet) {
     <Flex>
       
       <div className='CardsContainer'>
-      {animals.map( (pet) => (
+      {Animals.map( (pet) => (
         <TinderCard 
           className="swipe"
           key={pet.Name}
@@ -118,6 +118,7 @@ export default function PetCard(Pet) {
         > 
         <div>
       <Box
+        
         bg="#A9D4D9"
         w="1000px"
         h="500px"
@@ -149,7 +150,7 @@ export default function PetCard(Pet) {
               borderRadius={3}
               position="absolute"
               zIndex={1}
-              bg="rgba(235, 240, 242, 0.7)"
+              bg="rgba(235, 240, 242, 1)"
             >
               <Wrap spacing="1px">
                 <WrapItem>

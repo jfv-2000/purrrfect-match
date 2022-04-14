@@ -3,12 +3,16 @@
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
+    margin: auto;
     background-color:linear-gradient (aquamarine, rgb(223, 184, 140));
   }
   .swipe {
     position: absolute;
+    
+
   }
   
   .card {
     position: relative;
+    
   }
