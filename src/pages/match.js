@@ -1,10 +1,8 @@
 import React from "react";
-import PetCard from "../components/PetCard/PetCard";
+import MatchSwipe from "../components/Swipe/MatchSwipe";
 
 const Match = () => {
-  return (
-      <PetCard />
-  )
+  return <MatchSwipe />;
 };
 
 export default Match;

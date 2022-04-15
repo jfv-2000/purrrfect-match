@@ -150,7 +150,7 @@ const DesktopNav = () => {
             <Stack>
               <DesktopSubNav
                 label="Preferences"
-                href="#"
+                href="/preferences"
                 subLabel="Modify your ideal pet preferences to find the right one"
               />
               <DesktopSubNav

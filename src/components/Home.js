@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Flex,
-  Box,
-  Text,
-  Image,
-  VStack,
-  Container,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Text, Image, VStack, Container, Button } from "@chakra-ui/react";
 import FillerImage from "../utils/Filler/filler-1.png";
 export default function Home() {
   return (

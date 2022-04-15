@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from "react";
 import {
   Box,
   Flex,
@@ -18,49 +18,22 @@ import { BsGenderFemale, BsGenderMale } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Animals from "../../utils/PetDb/Pet-database";
-import '../../styles/PetCard.css'
+import "../../styles/PetCard.css";
 
-import TinderCard from "react-tinder-card";
-import CardFooter from "./CardFooter"
-
-
-export default function PetCard(Pet) {
+export default function PetCard(pet) {
   var settings = {
     dots: true,
+    draggable: false,
   };
 
-  const swiped = (direction, nameToDelete) => {
-    console.log("swiped on:" + nameToDelete);
-  }
-  
-  
-  const outOfWindow = (name) => {
-    console.log(name + " is gone");
-  }
-
-
   return (
-
     <Flex>
-      
-      <div className='CardsContainer'>
-      {Animals.map( (pet) => (
-        <TinderCard 
-          className="swipe"
-          key={pet.Name}
-          preventSwipe={["up", "down"]}
-          onSwipe={(direction) => swiped(direction, pet.Name)}
-          onCardLeftScreen={() => outOfWindow(pet.Name)}
-        > 
-        <div>
       <Box
-        
         bg="#A9D4D9"
         w="1000px"
         h="500px"
         my="60px"
-        ml="auto"
+        ml="10px"
         mr="auto"
         pt="20px"
         pr="20px"
@@ -173,13 +146,7 @@ export default function PetCard(Pet) {
             })}
           </Container>
         </SimpleGrid>
-        
       </Box>
-      </div>
-      <CardFooter />
-      </TinderCard>
-        )) }
-      </div>
     </Flex>
   );
 }
