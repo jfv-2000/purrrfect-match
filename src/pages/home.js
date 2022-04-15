@@ -1,14 +1,7 @@
 import React from "react";
-import { Box, Text, Container } from "@chakra-ui/react";
-
+import Homepage from "../components/Home";
 const Home = () => {
-  return (
-    <Box>
-      <Container h="100%">
-        <Text> hi </Text>
-      </Container>
-    </Box>
-  );
+  return <Homepage />;
 };
 
 export default Home;
