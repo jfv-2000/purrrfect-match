@@ -9,7 +9,7 @@
   .swipe {
     position: absolute;
     left: 20%;
-    
+    z-index: 1;
 
   }
   
