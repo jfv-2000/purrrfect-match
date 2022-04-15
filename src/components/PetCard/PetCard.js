@@ -29,69 +29,6 @@ export default function PetCard(Pet) {
   var settings = {
     dots: true,
   };
-  const [animals,setAnimals] = useState([
-    {
-      Name: "Harry",
-      Gender: "Male",
-      Age: "5",
-      Type: "Large Husky-x Dog",
-      Distance: "69",
-      About:
-        " I am an energetic Husky that loves cuddles and snow. I'm fat and obese as shit so please put me on a diet !",
-      Traits: ["Loyal", "Energetic", "Aggressive"],
-      PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
-      NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
-      Upkeep: [
-        { Type: "Energy Level", Level: 59 },
-        { Type: "Fatness", Level: 99 },
-      ],
-      Pictures: [
-        "https://img.dog-learn.com/dog-breeds/siberian-husky/siberian-husky-sz6.jpg",
-        "https://www.metrovetchicago.com/sites/default/files/styles/large/public/siberian-husky-dog-breed-info.jpg?itok=m9gSUDq7",
-      ],
-    },
-    {
-      Name: "Jamie",
-      Gender: "Female",
-      Age: "6",
-      Type: "small Husky-x Dog",
-      Distance: "26",
-      About:
-        " I'm smol.",
-      Traits: ["Loyal", "Energetic", "Aggressive"],
-      PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
-      NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
-      Upkeep: [
-        { Type: "Energy Level", Level: 59 },
-        { Type: "Fatness", Level: 99 },
-      ],
-      Pictures: [
-        "https://c8.alamy.com/zooms/9/5fedd3af28ec4185b5734f5a076f1d60/kngfjp.jpg",
-        "https://www.metrovetchicago.com/sites/default/files/styles/large/public/siberian-husky-dog-breed-info.jpg?itok=m9gSUDq7",
-      ],
-    },
-    {
-      Name: "Jess",
-      Gender: "Female",
-      Age: "7",
-      Type: "small Husky-x Dog",
-      Distance: "26",
-      About:
-        " I'm not smol.",
-      Traits: ["Loyal", "Energetic", "Aggressive"],
-      PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
-      NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
-      Upkeep: [
-        { Type: "Energy Level", Level: 59 },
-        { Type: "Fatness", Level: 99 },
-      ],
-      Pictures: [
-        "https://www.metrovetchicago.com/sites/default/files/styles/large/public/siberian-husky-dog-breed-info.jpg?itok=m9gSUDq7",
-        "https://c8.alamy.com/zooms/9/5fedd3af28ec4185b5734f5a076f1d60/kngfjp.jpg",
-      ],
-    },
-  
-  ]);
 
   const swiped = (direction, nameToDelete) => {
     console.log("swiped on:" + nameToDelete);
