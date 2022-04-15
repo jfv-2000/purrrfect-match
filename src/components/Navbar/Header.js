@@ -1,93 +1,202 @@
 import React from "react";
-import { Link, Box, Flex, Stack } from "@chakra-ui/react";
-
+import {
+  Box,
+  Flex,
+  Text,
+  Stack,
+  Icon,
+  Link,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  useColorModeValue,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { SettingsIcon } from "@chakra-ui/icons";
+import { AiFillHome } from "react-icons/ai";
+import { MdPets } from "react-icons/md";
 import Logo from "./Logo";
 
-const NavBar = (props) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+export default function NavBar() {
   return (
-    <NavBarContainer {...props}>
-      <MenuItem to="/">
-        <Logo w="50px" />
-      </MenuItem>
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
-    </NavBarContainer>
-  );
-};
+    <Box>
+      <Flex
+        color={useColorModeValue("black", "white")}
+        minH={"60px"}
+        py={{ base: 2 }}
+        px={{ base: 4 }}
+        borderStyle={"solid"}
+        bg="#5B9EA6"
+        align={"center"}
+      >
+        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+          <Link
+            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            fontFamily={"heading"}
+            color={useColorModeValue("white")}
+            href="/"
+          >
+            <Logo ml="25px" />
+          </Link>
 
-const CloseIcon = () => (
-  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-    <title>Close</title>
-    <path
-      fill="white"
-      d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
-    />
-  </svg>
-);
-
-const MenuIcon = () => (
-  <svg
-    width="24px"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="white"
-  >
-    <title>Menu</title>
-    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-  </svg>
-);
-
-const MenuToggle = ({ toggle, isOpen }) => {
-  return (
-    <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
+          <Flex ml={10} alignContent="right">
+            <DesktopNav />
+          </Flex>
+        </Flex>
+      </Flex>
     </Box>
   );
+}
+
+const DesktopNav = () => {
+  const linkColor = useColorModeValue("white");
+  const linkHoverColor = useColorModeValue("gray.800");
+  const popoverContentBgColor = useColorModeValue("white");
+
+  return (
+    <Stack direction={"row"} spacing="6" my="auto">
+      <Box
+        _hover={{
+          textDecoration: "underline",
+        }}
+      >
+        <Popover trigger={"hover"} placement={"bottom-start"}>
+          <PopoverTrigger>
+            <Link
+              p={2}
+              href={"/"}
+              fontSize={"md"}
+              fontWeight={1000}
+              color={linkColor}
+              mr="10px"
+              _hover={{
+                textDecoration: "none",
+                color: linkHoverColor,
+              }}
+            >
+              <Icon as={AiFillHome} boxSize="5" mr="5px" />
+              Home
+            </Link>
+          </PopoverTrigger>
+        </Popover>
+        <Popover trigger={"hover"} placement={"bottom-start"}>
+          <PopoverTrigger>
+            <Link
+              p={2}
+              href={"/match"}
+              fontSize={"md"}
+              mr="10px"
+              fontWeight={1000}
+              color={linkColor}
+              _hover={{
+                textDecoration: "none",
+                color: linkHoverColor,
+              }}
+            >
+              <Icon as={MdPets} boxSize="5" mr="5px" />
+              Find Pet
+            </Link>
+          </PopoverTrigger>
+
+          <PopoverContent
+            border={0}
+            boxShadow={"xl"}
+            bg={popoverContentBgColor}
+            p={4}
+            rounded={"xl"}
+            minW={"sm"}
+          >
+            <Stack>
+              <DesktopSubNav
+                label="Matchmaking"
+                href="/match"
+                subLabel="Match with other pets in an interactive way"
+              />
+              <DesktopSubNav
+                label="View list"
+                href="/grid"
+                subLabel="View a list of pets and search for the right one"
+              />
+            </Stack>
+          </PopoverContent>
+        </Popover>
+        <Popover trigger={"hover"} placement={"bottom-start"}>
+          <PopoverTrigger>
+            <Link
+              p={2}
+              href={"#"}
+              fontSize={"md"}
+              mr="10px"
+              fontWeight={1000}
+              color={linkColor}
+              _hover={{
+                textDecoration: "none",
+                color: linkHoverColor,
+              }}
+            >
+              <Icon as={SettingsIcon} boxSize="5" mr="5px" />
+              Settings
+            </Link>
+          </PopoverTrigger>
+
+          <PopoverContent
+            border={0}
+            boxShadow={"xl"}
+            bg={popoverContentBgColor}
+            p={4}
+            rounded={"xl"}
+            minW={"sm"}
+          >
+            <Stack>
+              <DesktopSubNav
+                label="Preferences"
+                href="#"
+                subLabel="Modify your ideal pet preferences to find the right one"
+              />
+              <DesktopSubNav
+                label="Account Settings"
+                href="#"
+                subLabel="View and change settings related to your account"
+              />
+            </Stack>
+          </PopoverContent>
+        </Popover>
+      </Box>
+    </Stack>
+  );
 };
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
-    <Link href={to} display="block">
-      {children}
+    <Link
+      href={href}
+      role={"group"}
+      display={"block"}
+      p={2}
+      rounded={"md"}
+      _hover={{ bg: useColorModeValue("blue.50", "blue.900") }}
+    >
+      <Stack direction={"row"} align={"center"}>
+        <Box>
+          <Text
+            transition={"all .3s ease"}
+            _groupHover={{ color: "blue.400" }}
+            fontWeight={500}
+          >
+            {label}
+          </Text>
+          <Text fontSize={"sm"}>{subLabel}</Text>
+        </Box>
+        <Flex
+          transition={"all .3s ease"}
+          transform={"translateX(-10px)"}
+          opacity={0}
+          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
+          justify={"flex-end"}
+          align={"center"}
+          flex={1}
+        ></Flex>
+      </Stack>
     </Link>
   );
 };
-
-const MenuLinks = ({ isOpen }) => {
-  return (
-    <Box
-      display={{ base: isOpen ? "block" : "none", md: "block" }}
-      flexBasis={{ base: "100%", md: "auto" }}
-    >
-      <Stack spacing={10} align="center" direction="row">
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/match">Match</MenuItem>
-      </Stack>
-    </Box>
-  );
-};
-
-const NavBarContainer = ({ children, ...props }) => {
-  return (
-    <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      wrap="wrap"
-      w="100%"
-      mb={8}
-      p={3}
-      bg="#5B9EA6"
-      color="white"
-      {...props}
-    >
-      {children}
-    </Flex>
-  );
-};
-
-export default NavBar;
