@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "../../utils/Logo/Depressed-dog-logo.png";
-import { Box } from "@chakra-ui/react";
+import ImageLogo from "../../utils/Logo/logo.png";
+import { Box, Image } from "@chakra-ui/react";
 
 export default function Logo(props) {
   return (
     <Box {...props}>
-      <img src={Image} width="60px" height="60px" alt="logo" />
+      <Image src={ImageLogo} boxSize="38px" alt="logo" />
     </Box>
   );
 }

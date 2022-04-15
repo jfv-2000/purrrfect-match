@@ -58,7 +58,7 @@ export default function PetCard(Pet) {
               borderRadius={3}
               position="absolute"
               zIndex={1}
-              bg="rgba(235, 240, 242, 0.7)"
+              bg="rgba(235, 240, 242, 1)"
             >
               <Wrap spacing="1px">
                 <WrapItem>
