@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Navbar/Header";
 import NavLinkStructure from "./components/Navbar/Navlink-structure";
-import "./styles.css";
+import "./styles/styles.css";
 
 export default function App() {
   return (
