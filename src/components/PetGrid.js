@@ -1,34 +1,66 @@
 import React from "react";
-import { Image, SimpleGrid, Box, Text, Container, Button, Link  } from '@chakra-ui/react'
-import Pets from "../utils/PetDb/pet-grid-db";
+import { Box, Text, Container, Image, SimpleGrid, Wrap, WrapItem, Icon, Button } from '@chakra-ui/react'
+import { BsGenderFemale, BsGenderMale } from "react-icons/bs";
+import Slider from "react-slick";
+import DogExample from "../utils/PetDb/Pet-database";
 
 export default function PetGrid(Pet) {
+    var settings = {
+        dots: true,
+      };
     return (
-        <SimpleGrid columns={[1, null, 2, null, 3]} spacing="40px" padding="20px">
-            {Pets.map((i) => {
+        <>
+        <SimpleGrid columns={[1, 2, 3, 4]} spacing="40px" padding="20px">
+            <Box bg='#A9D4D9' height='490px' width="443px" borderRadius="20px" padding="11px 0px">
+            <Container ml="20px" w="400px" h="500px" position="relative">
+            <Slider {...settings}>
+              {DogExample.Pictures.map((link, i) => {
                 return (
-
-                        <Box bg='#A9D4D9' height='200px' width="400px" borderRadius="8px" padding="11px 0px">
-                            <Container position="absolute">
-                            <Image
-                                borderRadius="8px"
-                                boxSize="175px"
-                                src={i.image}
-                            />
-                            </Container>
-                            <Container padding="0px 0px 0px 200px" >
-                                <Text bg="rgba(235, 240, 242, 0.7)" fontSize="3xl" fontWeight="bold">{i.name}</Text>
-                            </Container>
-                            <Container padding="80px 0px 0px 235px" >
-                                <Link href="/" style={{ textDecoration: 'none' }}>
-                                    <Button colorScheme='teal' size='lg'>
-                                      View Pet
-                                    </Button>
-                                </Link>
-                            </Container>
-                        </Box>
+                  <Image
+                    borderRadius="20px"
+                    height="450px"
+                    src={link}
+                    key={{ i }}
+                  />
                 );
-            })}
+              })}
+            </Slider>
+            <Container
+              w="60%"
+              bottom="70px"
+              right="15px"
+              borderRadius={3}
+              position="absolute"
+              zIndex={1}
+              bg="rgba(235, 240, 242, 0.7)"
+            >
+              <Wrap spacing="1px">
+                <WrapItem>
+                  {" "}
+                  <Text fontSize="3xl" fontWeight="bold">
+                    {DogExample.Gender === "Male" ? (
+                      <Icon as={BsGenderMale} boxSize={6} color="blue.600" />
+                    ) : (
+                      <Icon as={BsGenderFemale} boxSize={6} color="red.600" />
+                    )}
+                    {DogExample.Name}, {DogExample.Age} y.o.
+                  </Text>
+                </WrapItem>
+                <WrapItem>
+                  <Text fontSize="xl">
+                    {DogExample.Type}, {DogExample.Distance} km away
+                  </Text>
+                </WrapItem>
+              </Wrap>
+            </Container>
+          </Container>
+            </Box>
         </SimpleGrid>
+        <Container width="155px">
+          <Button colorScheme='teal' size='md' borderRadius="10px" position="center">
+            Load more v
+          </Button>
+        </Container>
+        </>
     );
 }
