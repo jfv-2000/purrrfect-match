@@ -11,8 +11,6 @@ import {
   TabPanels,
   Select,
   Button,
-  Tag,
-  Stack,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
@@ -21,7 +19,6 @@ import TraitTag from "./TraitTag";
 
 export default function PreferenceSettings(props) {
   const [age, setAge] = useState([0, 20]);
-  const [btnVariant, setBtnVariant] = useState("outline");
   const handleAge = (event, newAge) => {
     setAge(newAge);
   };
@@ -92,13 +89,13 @@ export default function PreferenceSettings(props) {
                 />
               </TabPanel>
               <TabPanel>
-                <Text mt="10px" fontSize="lg" fontWeight="500" ml="20px">
+                <Text mt="10px" fontSize="lg" fontWeight="600" ml="20px" as="u">
                   Select your favorite traits for your match:
                 </Text>
                 <Container
                   borderRadius={8}
                   w="500px"
-                  h="200px"
+                  h="206px"
                   mt="10px"
                   pt="10px"
                   ml="20px"
@@ -149,6 +146,18 @@ export default function PreferenceSettings(props) {
                     </WrapItem>
                     <WrapItem>
                       <TraitTag trait="Dog Friendly" />
+                    </WrapItem>
+                    <WrapItem>
+                      <TraitTag trait="Gentle" />
+                    </WrapItem>
+                    <WrapItem>
+                      <TraitTag trait="Protective" />
+                    </WrapItem>
+                    <WrapItem>
+                      <TraitTag trait="Easy going" />
+                    </WrapItem>
+                    <WrapItem>
+                      <TraitTag trait="Excited" />
                     </WrapItem>
                   </Wrap>
                 </Container>
