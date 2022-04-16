@@ -6,8 +6,8 @@ const Pets = [
     {name: "Gustave", image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55149182/2/?bust=1648596181&width=1080"},
     {name: "Grizzley", image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55152551/1/?bust=1649813566&width=560"},
     {name: "Teo", image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55295847/1/?bust=1649891796&width=560"},
-    {name: "Harry", image: "https://img.dog-learn.com/dog-breeds/siberian-husky/siberian-husky-sz6.jpg"},
-    {name: "Harry", image: "https://img.dog-learn.com/dog-breeds/siberian-husky/siberian-husky-sz6.jpg"}
+    {name: "Champion", image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55301554/2/?bust=1649967408&width=1080"},
+    {name: "Leo", image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/2/?bust=1632513079&width=1080"}
 ];
   
   export default Pets;

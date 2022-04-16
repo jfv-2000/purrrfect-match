@@ -139,6 +139,46 @@ const DogExample = [
       "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55295847/3/?bust=1649891797&width=560",
     ],
   },
+  {
+    Name: "Champion",
+    Gender: "Male",
+    Age: "10",
+    Type: "Germain-shephard Dog",
+    Distance: "23",
+    About:
+      " Hey its Champion but you can call me Champ! I enjoy my daily walks and am a very calm dog.",
+    Traits: ["trained","friendly" ,"lovable"],
+    PositiveCharacteristics: ["comfortable being alone","sprayed/neutered"],
+    NegativeCharacteristics: ["Cat friendly"],
+    Upkeep: [
+      { Type: "Energy Level", Level: 45 },
+      { Type: "Grooming level", Level: 30 },
+    ],
+    Pictures: [
+      "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55301554/2/?bust=1649967408&width=1080",
+      "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55301554/3/?bust=1649960219&width=1080",
+    ],
+  },
+{
+  Name: "Leo",
+  Gender: "Male",
+  Age: "<1",
+  Type: "Small Black Kitten",
+  Distance: "13",
+  About:
+    " Hey its Leo and I'm a small kitten. I love playing and snuggling and I can be a bit silly.",
+  Traits: ["lovable","loves kisses" ,"energetic"],
+  PositiveCharacteristics: ["curious","playful", "gentle"],
+  NegativeCharacteristics: ["Cat friendly", "house trained"],
+  Upkeep: [
+    { Type: "Energy Level", Level: 45 },
+    { Type: "Grooming level", Level: 30 },
+  ],
+  Pictures: [
+    "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/2/?bust=1632513079&width=1080",
+    "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/1/?bust=1632514179&width=1080",
+  ],
+},
 
 ];
 
