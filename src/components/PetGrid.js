@@ -10,10 +10,10 @@ export default function PetGrid(Pet) {
       };
     return (
         <>
-        <SimpleGrid columns={[1, 2, 3, 4]} spacing="40px" padding="20px">
+        <SimpleGrid columns={[1, 2, 3, 4]} spacing="40px" padding="10px" minChildWidth="440px">
         {Animals.map((DogExample) => {
           return (
-            <Box bg='#A9D4D9' height='490px' width="443px" borderRadius="20px" padding="11px 0px">
+            <Box bg='#A9D4D9' height='490px' width="440px" borderRadius="20px" padding="11px 0px">
             <Container ml="20px" w="400px" h="500px" position="relative">
             <Slider {...settings}>
               {DogExample.Pictures.map((link, i) => {
@@ -60,7 +60,7 @@ export default function PetGrid(Pet) {
             );
           })}
         </SimpleGrid>
-        <Container width="155px">
+        <Container width="139px" padding="10px">
           <Button colorScheme='teal' size='md' borderRadius="10px" position="center">
             Load more v
           </Button>
