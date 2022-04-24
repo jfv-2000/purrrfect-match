@@ -11,7 +11,7 @@ function CardFooter() {
     <Container
       className="cardFooter"
       position="absolute"
-      mt="580px"
+      mt="520px"
       justifyContent="space-evenly"
       w="100%"
     >

@@ -32,8 +32,6 @@ export default function PetCard(pet) {
         bg="#A9D4D9"
         w="1000px"
         h="500px"
-        my="60px"
-        ml="10px"
         mr="auto"
         pt="20px"
         pr="20px"

@@ -17,6 +17,9 @@ function MatchSwipe() {
 
   return (
     <Box>
+      <br />
+      <br />
+      <br />
       <Container className="cardContainer">
         {Animals.map((pet, i) => {
           console.log("character dab", pet.Name);

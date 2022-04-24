@@ -6,10 +6,10 @@ const DogExample = [
     Type: "Large Husky-x Dog",
     Distance: "69",
     About:
-      " I am an energetic Husky that loves cuddles and snow. I'm fat and obese as shit so please put me on a diet !",
-    Traits: ["Loyal", "Energetic", "Aggressive"],
+      " I am an energetic Husky that loves cuddles and snow. I have a lot of energy so please walk me often !",
+    Traits: ["Loyal", "Energetic", "Sporty"],
     PositiveCharacteristics: ["Dog Friendly", "Friendly", "Well Trained"],
-    NegativeCharacteristics: ["Swaglord", "Cat Friendly"],
+    NegativeCharacteristics: ["Children Friendly", "Cat Friendly"],
     Upkeep: [
       { Type: "Energy Level", Level: 59 },
       { Type: "Fatness", Level: 99 },
@@ -48,8 +48,8 @@ const DogExample = [
     About:
       " Hello, this is my second time here because of leash aggressions but ready for obedience training and love playing with other dogs.",
     Traits: ["active", "multi-colored eyes", "eager to be trained"],
-    PositiveCharacteristics: ["Dog Friendly" ],
-    NegativeCharacteristics: ["Barks often","Well Trained", "Cat Friendly"],
+    PositiveCharacteristics: ["Dog Friendly"],
+    NegativeCharacteristics: ["Barks often", "Well Trained", "Cat Friendly"],
     Upkeep: [
       { Type: "Energy Level", Level: 70 },
       { Type: "Grooming level", Level: 20 },
@@ -68,7 +68,7 @@ const DogExample = [
     About:
       " My name is James and I am a very actrive pup! I love to play and will need training and exercise.",
     Traits: ["active", "cute", "lovable"],
-    PositiveCharacteristics: ["Dog Friendly","Cat Friendly","Well Trained"],
+    PositiveCharacteristics: ["Dog Friendly", "Cat Friendly", "Well Trained"],
     NegativeCharacteristics: ["requires commitment", "Cat Friendly"],
     Upkeep: [
       { Type: "Energy Level", Level: 99 },
@@ -88,7 +88,7 @@ const DogExample = [
     About:
       " I was rescued from a high kill pound and that has caused me a lot of stress. I am however a loving cat and have all the neccessary shots.",
     Traits: ["Friendly", "affectionate", "lovable"],
-    PositiveCharacteristics: ["cute","gentle","Well Trained"],
+    PositiveCharacteristics: ["cute", "gentle", "Well Trained"],
     NegativeCharacteristics: ["easily stressed", "declawed"],
     Upkeep: [
       { Type: "Energy Level", Level: 40 },
@@ -108,7 +108,7 @@ const DogExample = [
     About:
       " I was rescued from the streets so you have to be patient and accepting of my space. I love cuddling once I get to know you and I love windows.",
     Traits: ["House trained", "lovable"],
-    PositiveCharacteristics: ["Cute","Cat Friendly","Well Trained"],
+    PositiveCharacteristics: ["Cute", "Cat Friendly", "Well Trained"],
     NegativeCharacteristics: ["Dog Friendly", "children Friendly"],
     Upkeep: [
       { Type: "Energy Level", Level: 40 },
@@ -127,8 +127,8 @@ const DogExample = [
     Distance: "8",
     About:
       " I am a small rabbit and I love my lettuce and carrots! I do like to be held from time to time.",
-    Traits: ["Cute","small" ,"lovable"],
-    PositiveCharacteristics: ["Cute","sprayed/neutered"],
+    Traits: ["Cute", "small", "lovable"],
+    PositiveCharacteristics: ["Cute", "sprayed/neutered"],
     NegativeCharacteristics: ["Shy"],
     Upkeep: [
       { Type: "Energy Level", Level: 20 },
@@ -147,8 +147,8 @@ const DogExample = [
     Distance: "23",
     About:
       " Hey its Champion but you can call me Champ! I enjoy my daily walks and am a very calm dog.",
-    Traits: ["trained","friendly" ,"lovable"],
-    PositiveCharacteristics: ["comfortable being alone","sprayed/neutered"],
+    Traits: ["trained", "friendly", "lovable"],
+    PositiveCharacteristics: ["comfortable being alone", "sprayed/neutered"],
     NegativeCharacteristics: ["Cat friendly"],
     Upkeep: [
       { Type: "Energy Level", Level: 45 },
@@ -159,27 +159,26 @@ const DogExample = [
       "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55301554/3/?bust=1649960219&width=1080",
     ],
   },
-{
-  Name: "Leo",
-  Gender: "Male",
-  Age: "<1",
-  Type: "Small Black Kitten",
-  Distance: "13",
-  About:
-    " Hey its Leo and I'm a small kitten. I love playing and snuggling and I can be a bit silly.",
-  Traits: ["lovable","loves kisses" ,"energetic"],
-  PositiveCharacteristics: ["curious","playful", "gentle"],
-  NegativeCharacteristics: ["Cat friendly", "house trained"],
-  Upkeep: [
-    { Type: "Energy Level", Level: 45 },
-    { Type: "Grooming level", Level: 30 },
-  ],
-  Pictures: [
-    "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/2/?bust=1632513079&width=1080",
-    "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/1/?bust=1632514179&width=1080",
-  ],
-},
-
+  {
+    Name: "Leo",
+    Gender: "Male",
+    Age: "<1",
+    Type: "Small Black Kitten",
+    Distance: "13",
+    About:
+      " Hey its Leo and I'm a small kitten. I love playing and snuggling and I can be a bit silly.",
+    Traits: ["lovable", "loves kisses", "energetic"],
+    PositiveCharacteristics: ["curious", "playful", "gentle"],
+    NegativeCharacteristics: ["Cat friendly", "house trained"],
+    Upkeep: [
+      { Type: "Energy Level", Level: 45 },
+      { Type: "Grooming level", Level: 30 },
+    ],
+    Pictures: [
+      "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/2/?bust=1632513079&width=1080",
+      "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53080747/1/?bust=1632514179&width=1080",
+    ],
+  },
 ];
 
 export default DogExample;
