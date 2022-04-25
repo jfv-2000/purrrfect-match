@@ -35,7 +35,7 @@ export default function PreferenceSettings(props) {
         pr="20px"
         borderRadius={8}
       >
-        <Container bg="#EBF0F2" w="240px" ml="0" mt="20px">
+        <Container bg="#EBF0F2" w="240px" ml="0" mt="10px">
           <Text fontSize="3xl" fontWeight="700">
             {" "}
             My Preferences
@@ -48,7 +48,7 @@ export default function PreferenceSettings(props) {
               <Tab fontWeight="600">Animal Traits</Tab>
             </TabList>
             <TabPanels>
-              <TabPanel>
+              <TabPanel bg="#EBF0F2" borderRadius={8} mt="5px">
                 <Text fontSize="lg" fontWeight="600" as="u">
                   Select the type of animal which fits your preferences
                 </Text>
@@ -164,7 +164,7 @@ export default function PreferenceSettings(props) {
               </TabPanel>
             </TabPanels>
           </Tabs>
-          <Container ml="650px">
+          <Container ml="650px" mt="10px">
             <Button colorScheme="teal" variant="outline" mr="20px">
               Cancel
             </Button>
