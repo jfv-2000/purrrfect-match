@@ -56,7 +56,7 @@ Run `npm start` in the command line in the project directory. This should automa
 </p>
 
 ## Screenshots  📸
-![Swiping feature](ezgif.com-gif-maker.gif)
+![Swiping feature](swiping.gif)
 Blablaba
 
 ## License 📝
