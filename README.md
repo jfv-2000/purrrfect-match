@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/jfv-2000/purrrfect-match/">
-  <img src="./src/utils/Logo/logo.png" height="128">
+  <img src="./src/utils/Logo/logo-big.png" height="128">
     <h1 align="center">SOEN 357 - Purrrfect Match App</h1>
   </a>
 </p>
@@ -26,7 +26,7 @@
 
 Purrrfect Match takes the shape of a matchmaking app, in which users are able to browse an interactive database of animals that match their requirements and lifestyle. Instead of being limited to the matchmaking process, users of this app are able to view the entire database of animals. The purpose of giving rescued animals human personas and likable profiles in the familiar setting of a matchmaking app is to help the end users feel more at ease in the adoption process. Users are made aware of the needs of the animal they are looking to adopt, such as keeping away from cats or children, minimizing the likelihood of the animal being returned to the shelter.
 
-## Team Members 💪 🎉 🔥
+## Team Members 💪 🔥
 
 <div align="center">
 <table>
@@ -44,6 +44,9 @@ Purrrfect Match takes the shape of a matchmaking app, in which users are able to
 </div>
 <br>
 
+# How to run the app 🖥️
+Run `npm start` in the command line in the project directory. This should automatically open up http://localhost:3000/ where you can run the app.
+
 # Sources 📙
 
 <p align="left">
@@ -52,7 +55,7 @@ Purrrfect Match takes the shape of a matchmaking app, in which users are able to
   </a>
 </p>
 
-## Screenshots 🖥️
+## Screenshots  📸
 
 Blablaba
 
