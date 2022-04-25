@@ -41,7 +41,7 @@ export default function PreferenceSettings(props) {
             My Preferences
           </Text>
         </Container>
-        <Container mt="30px" ml="70px">
+        <Container mt="20px" ml="70px">
           <Tabs variant="enclosed" w="800px" size="lg">
             <TabList>
               <Tab fontWeight="600">Animal Type</Tab>
@@ -96,7 +96,7 @@ export default function PreferenceSettings(props) {
                   borderRadius={8}
                   w="500px"
                   h="206px"
-                  mt="10px"
+                  mt="25px"
                   pt="10px"
                   ml="20px"
                   bg="#EBF0F2"
