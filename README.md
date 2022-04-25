@@ -22,7 +22,7 @@
   </a>
 </p>
 
-# Project Description 🚀
+## Project Description 🚀
 
 Purrrfect Match takes the shape of a matchmaking app, in which users are able to browse an interactive database of animals that match their requirements and lifestyle. Instead of being limited to the matchmaking process, users of this app are able to view the entire database of animals. The purpose of giving rescued animals human personas and likable profiles in the familiar setting of a matchmaking app is to help the end users feel more at ease in the adoption process. Users are made aware of the needs of the animal they are looking to adopt, such as keeping away from cats or children, minimizing the likelihood of the animal being returned to the shelter.
 
@@ -44,10 +44,10 @@ Purrrfect Match takes the shape of a matchmaking app, in which users are able to
 </div>
 <br>
 
-# How to run the app 🖥️
+## How to run the app 🖥️
 Run `npm start` in the command line in the project directory. This should automatically open up http://localhost:3000/ where you can run the app.
 
-# Sources 📙
+## Sources 📙
 
 <p align="left">
   <a aria-label="Animatch" href="https://www.animatch.ca/dog-adoption/animatch-adoptees">
