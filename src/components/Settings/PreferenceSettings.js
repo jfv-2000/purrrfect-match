@@ -53,11 +53,11 @@ export default function PreferenceSettings(props) {
                   Select the type of animal which fits your preferences
                 </Text>
                 <Text mt="10px" fontSize="lg">
-                  Race:
+                  Species:
                 </Text>
                 <Select
                   w="200px"
-                  placeholder="Select animal race"
+                  placeholder="Select animal species"
                   borderColor="black"
                 >
                   <option value="option1">Dogs</option>
