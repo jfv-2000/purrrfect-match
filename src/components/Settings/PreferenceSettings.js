@@ -90,7 +90,7 @@ export default function PreferenceSettings(props) {
               </TabPanel>
               <TabPanel>
                 <Text mt="10px" fontSize="lg" fontWeight="600" ml="20px" as="u">
-                  Select your favorite traits for your match:
+                  Select your preferred traits for your match:
                 </Text>
                 <Container
                   borderRadius={8}
