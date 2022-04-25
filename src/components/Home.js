@@ -1,5 +1,13 @@
 import React from "react";
-import { Flex, Text, Image, VStack, Container, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Image,
+  VStack,
+  Container,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import FillerImage from "../utils/Filler/filler-1.png";
 export default function Home() {
   return (
@@ -18,9 +26,11 @@ export default function Home() {
           <Image src={FillerImage} />
         </Container>
 
-        <Button size="md" colorScheme="teal">
-          Start here
-        </Button>
+        <Link href="/match">
+          <Button size="md" colorScheme="teal">
+            Start here
+          </Button>
+        </Link>
       </VStack>
     </Flex>
   );
