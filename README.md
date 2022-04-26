@@ -60,11 +60,10 @@ Run `npm start` in the command line in the project directory. This should automa
 <a>
   <img src="./src/utils/ScreenShots/HomeScreen.png">
 </a>
+![Swiping feature](swiping.gif)
 <a>
   <img src="./src/utils/ScreenShots/SwipingScreen.png">
 </a>
-
-![Swiping feature](swiping.gif)
 <a>
   <img src="./src/utils/ScreenShots/GridScreen.png">
 </a>
