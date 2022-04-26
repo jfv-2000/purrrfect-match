@@ -57,24 +57,24 @@ Run `npm start` in the command line in the project directory. This should automa
 
 ## Screenshots  📸
 
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/HomeScreen.png">
 </a>
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/SwipingScreen.png">
 </a>
 
 ![Swiping feature](swiping.gif)
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/GridScreen.png">
 </a>
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/GridScreenCard.png">
 </a>
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/Settings1.png">
 </a>
-<a href="https://github.com/jfv-2000/purrrfect-match/">
+<a>
   <img src="./src/utils/ScreenShots/Settings2.png">
 </a>
 
